@@ -1,0 +1,12 @@
+{
+  "python.pythonPath": "venv/bin/python",
+  "python.linting.flake8Enabled": true,
+  "python.linting.enabled": true,
+  "python.formatting.provider": "black",
+  "editor.formatOnSave": true,
+  // "[python]": {
+  // "editor.formatOnSave": false,
+  // use when multiple fixers to be used in some order, disable autoformate on save and use save code action to apply different fixers
+    // "editor.codeActionsOnSave": ["source.formatDocument", "source.fixAll.flake8"],
+  // },
+}
