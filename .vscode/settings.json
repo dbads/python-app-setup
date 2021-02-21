@@ -32,15 +32,22 @@
   "todo-tree.highlights.customHighlight": {
     "TODO": {
       "icon": "check",
-      "foreground": "yellow"
+      "foreground": "yellow",
+      "gutterIcon": true
     },
     "FIXME": {
       "foreground": "red",
       "iconColour": "red",
       "gutterIcon": true
     },
+    "HACK": {
+      "foreground": "orange",
+      "iconColour": "orange",
+      "gutterIcon": true
+    },
     "NOTE": {
-      "foreground": "green"
+      "foreground": "green",
+      "gutterIcon": true
     }
   }
 }

@@ -16,6 +16,11 @@ def generate_random_no(a, b):
   #  return a random number
   print("date is %s" % date.today())
   print("random number in [%s,%s] is %s" % (a, b, randint(a, b)))
+  #  TODO - change return
+  # FIXME - fix me tag demo
+  # HACK - hackk tag demo
+  # NOTE - note tag demo
+  # BUG - bug tag demo
   return a + b
 
 
