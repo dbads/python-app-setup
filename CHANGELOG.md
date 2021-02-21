@@ -1,3 +1,4 @@
+<!-- Either manually add changes while releasing to prod of create some script to automate moving unreleased section to released -->
 # Changelog
 
 All notable changes to this project will be documented in this file.
