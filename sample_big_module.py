@@ -1,5 +1,5 @@
 # Notes
-# 1. the meeting system is designed to handle operatinos within a single day 
+# 1. the meeting system is designed to handle operatinos within a single day
 # 2. in a day time is measured using 24 hour clock 1,2,3...24
 # 3. time inputs are allowed only as [1,2 .... 23, 24] discrete values
 
@@ -38,8 +38,8 @@ class MeetingSystem:
     self.rooms_count = rooms_count
     self.employees_count = employees_count
 
-  
-  # Utitlity methods 
+
+  # Utitlity methods
   def validate_meeting_details(self, details):
     """Checks if meeting details are valid
     - time should be in [1,24]
@@ -61,7 +61,7 @@ class MeetingSystem:
       if start_time >= end_time:
         print('start_time should be strictly less than end_time.')
         is_valid = False
-      
+
       if end_time - start_time > 3:
         print('Meeting should not exceed 3 hours.')
         is_valid = False
@@ -72,14 +72,14 @@ class MeetingSystem:
       if type(employee_id) != int or employee_id not in range(1, self.employees_count + 1):
         print('Invalid Employee ID.')
         is_valid = False
-    
+
     # validate meeting_id
     if 'meeting_id' in details:
       meeting_id = details['meeting_id']
       if meeting_id not in self.meetings:
         print('Invalid meeting_id.')
         is_valid = False
-    
+
     if not is_valid: return False
     return True
 
@@ -164,7 +164,7 @@ class MeetingSystem:
         end_time = self.meetings[meeting_id]['end_time']
         time_key = self.get_time_key(start_time, end_time)
         room_id = self.meetings[meeting_id]['room_id']
-        self.schedules[time_key].remove(room_id) # free the room from schedules 
+        self.schedules[time_key].remove(room_id) # free the room from schedules
         del self.meetings[meeting_id] # remove meeting detail from meetings
         print('Successfuly canceled the meeting')
       else: print('You are not the organizer of this meeting')
@@ -183,7 +183,7 @@ def CreateMeetingSystem():
 
       meeting_system = MeetingSystem(rooms_count, employees_count)
       print('A MeetingSystem with %s Employees and %s meeting rooms has been created.\n'%(employees_count, rooms_count))
-      
+
       print('Notes :-\n')
       print('1. Employee IDs should be in [1-N], N is the employee_count')
       print('2. Time should be in [1,24]\n')
@@ -193,7 +193,7 @@ def CreateMeetingSystem():
         request_type = input('Enter the request_type [book, cancel, quit] > ')
         if request_type not in ['book', 'cancel', 'quit']:
           print('Operations not allowed. Please try again ...')
-        
+
         # processing book Operations
         if request_type == 'book':
           try:
@@ -208,7 +208,7 @@ def CreateMeetingSystem():
                   __file__,                  # /tmp/example.py
                   e.__traceback__.tb_lineno  # 2
               )
-        
+
         # Processing a cancel request
         if request_type == 'cancel':
           try:
