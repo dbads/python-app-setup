@@ -1,3 +1,4 @@
+; This configuration is used when using flake8 as linter
 [flake8]
 ; ignore the rules
 ignore = D203
