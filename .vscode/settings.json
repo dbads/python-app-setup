@@ -1,12 +1,25 @@
 {
+  "files.trimTrailingWhitespace": true,
+  "editor.tabSize": 2,
   "python.pythonPath": "venv/bin/python",
   "python.linting.flake8Enabled": true,
   "python.linting.enabled": true,
   "python.formatting.provider": "black",
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // this is set as default formatter for all the languages in
   "editor.formatOnSave": true,
-  // "[python]": {
-  // "editor.formatOnSave": false,
-  // use when multiple fixers to be used in some order, disable autoformate on save and use save code action to apply different fixers
-    // "editor.codeActionsOnSave": ["source.formatDocument", "source.fixAll.flake8"],
-  // },
+  "[python]": {
+    "editor.formatOnSave": false,
+    // override the defaultFormatter
+    "editor.defaultFormatter": "ms-python.python",
+    // use when multiple fixers to be used in some order, disable autoformate on save and use save code action to apply different fixersditor.defaultFormatter": "ms-python.python",
+    "editor.codeActionsOnSave": ["source.formatDocument"]
+  },
+  "[json]": {
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": ["source.formatDocument"]
+  },
+  "search.exclude": {
+    // to exclude files/folder while using cmd+shft+f, search
+    "migrations/seed/dump": true
+  }
 }
