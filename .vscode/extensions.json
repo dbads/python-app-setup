@@ -1,0 +1,7 @@
+{
+  "recommendations": [
+    "ms-python.python", // gives all the basic python tools IntelliSense, linting, debugging, code navigation, code formatting, Jupyter notebook support, refactoring, variable explorer, test explorer, and more!
+    "almenon.arepl", // AREPL automatically evaluates python code in real-time as you type.
+    "njpwerner.autodocstring", // Visual Studio Code extension to quickly generate docstrings for python functions
+  ]
+}
