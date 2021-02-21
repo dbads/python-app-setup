@@ -1,10 +1,13 @@
 {
   "files.trimTrailingWhitespace": true,
   "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.autoIndent": "full",
   "python.pythonPath": "venv/bin/python",
-  "python.linting.flake8Enabled": true,
   "python.linting.enabled": true,
-  "python.formatting.provider": "black",
+  "python.linting.pylintEnabled": true,
+  // "python.linting.flakeEnabled": true,
+  "python.formatting.provider": "autopep8",
   "editor.defaultFormatter": "esbenp.prettier-vscode", // this is set as default formatter for all the languages in
   "editor.formatOnSave": true,
   "[python]": {
