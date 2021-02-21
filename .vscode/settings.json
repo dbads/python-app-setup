@@ -24,5 +24,23 @@
   "search.exclude": {
     // to exclude files/folder while using cmd+shft+f, search
     "migrations/seed/dump": true
+  },
+  "todo-tree.general.tags": ["TODO", "HACK", "FIXME", "BUG", "NOTE"],
+  "todo-tree.highlights.defaultHighlight": {
+    "type": "line"
+  },
+  "todo-tree.highlights.customHighlight": {
+    "TODO": {
+      "icon": "check",
+      "foreground": "yellow"
+    },
+    "FIXME": {
+      "foreground": "red",
+      "iconColour": "red",
+      "gutterIcon": true
+    },
+    "NOTE": {
+      "foreground": "green"
+    }
   }
 }
