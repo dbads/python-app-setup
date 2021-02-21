@@ -1,0 +1,53 @@
+{
+  "files.trimTrailingWhitespace": true,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.autoIndent": "full",
+  "python.pythonPath": "venv/bin/python",
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+  // "python.linting.flake8Enabled": true, // uncomment this to use flake8 and comment above pylint enable
+  "python.formatting.provider": "autopep8",
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // this is set as default formatter for all the languages in
+  "editor.formatOnSave": true,
+  "[python]": {
+    "editor.formatOnSave": false,
+    // override the defaultFormatter
+    "editor.defaultFormatter": "ms-python.python",
+    // use when multiple fixers to be used in some order, disable autoformate on save and use save code action to apply different fixersditor.defaultFormatter": "ms-python.python",
+    "editor.codeActionsOnSave": ["source.formatDocument"]
+  },
+  "[json]": {
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": ["source.formatDocument"]
+  },
+  "search.exclude": {
+    // to exclude files/folder while using cmd+shft+f, search
+    "migrations/seed/dump": true
+  },
+  "todo-tree.general.tags": ["TODO", "HACK", "FIXME", "BUG", "NOTE"],
+  "todo-tree.highlights.defaultHighlight": {
+    "type": "line"
+  },
+  "todo-tree.highlights.customHighlight": {
+    "TODO": {
+      "icon": "check",
+      "foreground": "yellow",
+      "gutterIcon": true
+    },
+    "FIXME": {
+      "foreground": "red",
+      "iconColour": "red",
+      "gutterIcon": true
+    },
+    "HACK": {
+      "foreground": "orange",
+      "iconColour": "orange",
+      "gutterIcon": true
+    },
+    "NOTE": {
+      "foreground": "green",
+      "gutterIcon": true
+    }
+  }
+}
