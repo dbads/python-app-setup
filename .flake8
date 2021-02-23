@@ -1,7 +1,7 @@
 ; This configuration is used when using flake8 as linter
 [flake8]
 ; ignore the rules
-ignore = D203
+ignore = D203, E114, E111
 exclude =
     ; following files/dirs will not be checked for linting issues
     .git,
